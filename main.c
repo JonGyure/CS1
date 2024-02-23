@@ -2,15 +2,12 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
-  //already sorted case
   if (low > high){
     return -1;
   }
 
-  //Sorting algorithm
   int mid = low + (high - low) / 2;
 
-  //Exit clause
   if(numbers[mid] == value){
     return mid;
   } else if (numbers[mid] < value){
